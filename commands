@@ -1,0 +1,25 @@
+
+2D Oscillogram
+oscgram
+
+2D [spec] Sonogram
+sonogw('spec.wav', 0, 10, 2048, 2048, 'hanning', 512, 0, 30000, 1, '');
+
+2D [song] Sonogram
+sonogw('song.wav', 0, 10, 2048, 2048, 'hanning', 512, 0, 30000, 1, '');
+
+2D [spec] Magnitude Spectrum
+spec2dw('spec.wav', 4.0, 4096, 4096, 'hanning', 20, 30000, 1, '', 'magdb');
+
+3D [spec] Magnitude Spectrum
+spec3dw('spec.wav', 3, 1, 4096, 4096, 'hanning', 512, 0, 10000, 1, '');
+
+3D [song] Magnitude Spectrum
+spec3dw('song.wav', 3, .5, 4096, 4096, 'hanning', 256, 0, 10000, 1, '');
+
+2D [spec] Pitch Graph
+hps2dt('spec.wav', 3, 0.5, 2048, 2048, 'hanning', 512, 0, 2000, 3,'');
+
+2D [song] Pitch Graph
+hps2dt('song.wav', 0, 3, 1024, 1024, 'hanning', 512, 0, 2000, 3, '');
+
